@@ -9,8 +9,9 @@
 // Zmienna systemowa "$argv", w której można umieścić parametry w konsoli
 // print_r($argv);
 
-$akcja = $argv[1];
-$a = $argv[2];
+$nazwaProgramu = $argv[0];
+$akcja = $argv[2];
+$a = $argv[1];
 $b = $argv[3];
 
 // Kalkulator 
