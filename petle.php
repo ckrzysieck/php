@@ -64,21 +64,72 @@ foreach ($tablica as $value) {
 */
 // w pętli for wypisać 3 ostatnie elementy
 
-$tablica = [
-	'dupa1',
-	'dupa2',
-	'dupa3',
-	'dupa4',
-	'dupa5',
-	'dupa6',
-	'dupa7',
-	'dupa8',
-	'dupa9',
-	'dupa10',
-];
+// $tablica = [
+// 	'dupa1',
+// 	'dupa2',
+// 	'dupa3',
+// 	'dupa4',
+// 	'dupa5',
+// 	'dupa6',
+// 	'dupa7',
+// 	'dupa8',
+// 	'dupa9',
+// 	'dupa10',
+// ];
 
-//gvhihvybh
+// //gvhihvybh
 
-for ($i=7; $i < 10; $i++) { 
- 	echo $tablica[$i] . "\n";
- } 
+// for ($i=7; $i < 10; $i++) { 
+//  	echo $tablica[$i] . "\n";
+//  } 
+
+ // liczby przechowywane w tablicy
+
+$tablica = range(0, 15, 1);
+
+// $tablica = [
+// '0',
+// '1',
+// '2',
+// '3',
+// '4',
+// '5',
+// '6',
+// '7',
+// '8',
+// '9',
+// '10',
+// '11',
+// '12',
+// '13',
+// '14',
+// '15',
+// ];
+ 
+// foreach ($tablica as $key => $value) {
+//  	echo $value . "\n";
+//  }
+
+
+// funkcja count() liczy elementy tablicy
+// mam tablicę od 0 do 100 | fiz / biz
+
+
+$tablica = range(1, 100, 1);
+
+for ($i = 0; $i < count($tablica); $i++) {
+	if ($tablica[$i]%3 == 0) {
+		echo "fiz";
+	}  
+	if ($tablica[$i]%5 == 0) {
+		echo "biz";
+	} 
+	if ($tablica[$i]%3 == 0 and $tablica[$i]%5 == 0) {
+		break;
+	}
+	echo "\n";
+}
+
+// Zadanie 1. Przerobić na foreach zadanie powyżej
+// Zadanie 2. Generował figurę w konsolii (długość x szerokość) ma rysować "x" ma być z opcją wyboru znaku do rysowania
+// Zadanie 3. http://pl.spoj.com/problems/PRIME_T/
