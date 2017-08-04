@@ -57,6 +57,7 @@ do {
 	'pa10' => 'du',
 ]; 
 $a=0;
+// 
 foreach ($tablica as $value) {
 	echo $value . 'pa' . ++$a . "\n";
 }	
@@ -75,6 +76,8 @@ $tablica = [
 	'dupa9',
 	'dupa10',
 ];
+
+//gvhihvybh
 
 for ($i=7; $i < 10; $i++) { 
  	echo $tablica[$i] . "\n";
