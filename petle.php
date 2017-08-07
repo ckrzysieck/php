@@ -132,4 +132,4 @@ for ($i = 0; $i < count($tablica); $i++) {
 
 // Zadanie 1. Przerobić na foreach zadanie powyżej
 // Zadanie 2. Generował figurę w konsolii (długość x szerokość) ma rysować "x" ma być z opcją wyboru znaku do rysowania
-// Zadanie 3. http://pl.spoj.com/problems/PRIME_T/
+// Zadanie 3. http://pl.spoj.com/problems/PRIME_T/ - liczby pierwsze, sprawdzić czy są podzielne, jeśli nie, to są liczbami pierwszymi
