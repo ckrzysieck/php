@@ -32,7 +32,7 @@ switch ($akcja) {
 	case 'iloczyn':
 		echo $a * $b;
 		break;
-	case 'potegowanie':
+	case '^':
 		$baza = $a;
 		while ($b > 1) {
 			$a = $a * $baza;
@@ -44,6 +44,7 @@ switch ($akcja) {
 		echo 'błąd, musisz wykupić lincencje:)';
 		break;
 }
+echo "\n";
 
 /*
 if (2 == 7) {

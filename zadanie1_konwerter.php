@@ -9,9 +9,6 @@
 $a = $argv[2];
 $b = $argv[3];
 
-
-
-
 $akcja = array("Mac", "NT", "Irix", "Linux");
 if (in_array("suma", $os)) {
     echo $a + $b;
