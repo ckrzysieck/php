@@ -1,5 +1,31 @@
 <?php
 
+/*
+// Operatory logiczne / porównania
+
+2 == 3  // false - sprawdzenie
+2 === 3 // false - bardzo dokładne sprawdzenie, sprawdzany jest też typ wartości
+
+2 <= 3  // true
+2 >= 3  // false
+
+2 < 3   // true
+2 > 3   // false
+|| - or     // warunek lub
+&& - and     // warunek oraz / i
+++
+--
+*=
++=
+-=
+%=
+
+*=  //
+
+*/
+
+//die('Wykup pełną wersję');
+
 // //Ciągi znaków
 // $a = 'napis'; 
 
