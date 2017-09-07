@@ -1,44 +1,44 @@
 <?php
 
-// dodać możliwość wykonywania w kalkulatorze opcję wykonywania operacji przez użycie np. "+", czyli 2 + 3, dla pozostałych operacji arytmetycznych, także
-// Kalkulator
+// Kalkulator liczący operacje arytmetyczne: sumowanie, odejmowanie, mnożenie, dzielenie, pierwiastkowanie
 
 $nazwaProgramu = $argv[0];
 $a = $argv[1];
 $akcja = $argv[2];
 $b = $argv[3];
-$suma = ['+','suma'];
-
-// jak spowodować, by wszystkie klucze z tablicy zostały pobrane i przypisane im wartości, lub czy da sie przypisać wiele wartości do jednego klucza?
-
-// $suma = array('+','suma');
-// $suma = [
-// 	'0' => 'suma',
-// 	'0' => '+',
-// 	];
-
-// if (in_array('+','suma') == $akcja) {
+$suma = ['+','plus','suma','dodawanie','dodaj'];
+$roznica = ['-','minus','roznica','różnica','odejmowanie','odejmij'];
+$iloczyn = ['*','iloczyn','razy','pomnoz','pomnóż','mnozenie','mnożenie'];
+$iloraz = ['/',':','iloraz','dzielenie','podziel','dziel'];
+$potega = ['^','potega','potęga','potegowanie','potęgowanie'];
+$pierwiastek = ['$','p','pier','sqrt','pierwiastek','pierwiastkowanie'];
 
 if (in_array($akcja, $suma)) {
 	echo $a + $b;
-} else if ('iloczyn' == $akcja || '*' == $akcja) {
-	echo $a * $b;
-} else if ('minus' == $akcja || '-' == $akcja) {
-	echo $a - $b;	
-} else if ('iloraz' == $akcja || ':' == $akcja || '/' == $akcja) {
+} else if (in_array($akcja, $roznica)) {
+	echo $a - $b;
+} else if (in_array($akcja, $iloczyn)) {
+	echo $a * $b;	
+} else if (in_array($akcja, $iloraz)) {
 	if ($b == 0) {
-		echo 'nie dziel przez zero';
+		echo 'Nie dziel przez zero';
 	} else {
 		echo $a / $b;
 	}
-} else if ('potega' == $akcja || '^' == $akcja) {
+} else if (in_array($akcja, $potega)) {
 	$baza = $a;
 	while ($b > 1) {
 		$a = $a * $baza;
 		$b = $b - 1;
 		}
 	echo $a;
+} else if (in_array($akcja, $pierwiastek)) {
+	if ($b == 2) {
+		echo sqrt($a);
+	} else {
+	echo 'Pierwiastek kwadratowy nie może zostać obliczony, pamiętaj by użyć drugiego stopnia: 2';
+	}
 } else {
-	echo 'Operacja nie jest obsługiwana';
+	echo 'Operacja nie jest obsługiwana.';
 }
 echo "\n";

@@ -1,6 +1,7 @@
 <?php
 
 // http://pl.spoj.com/problems/PRIME_T/ - liczby pierwsze, sprawdzić czy są podzielne, jeśli nie, to są liczbami pierwszymi
+// rozbudować o wypisywanie po kolei liczb pierwszych, zrobić to na pętli for
 
 $liczba = $argv[1];
 

@@ -1,3 +1,5 @@
+<?php
+
 // konwerter jednostek czasu, przeliczający jednostki na godziny
 
 switch ($jednostka) {
