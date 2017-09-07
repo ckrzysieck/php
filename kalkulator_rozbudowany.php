@@ -19,7 +19,7 @@ $suma = ['+','suma'];
 
 // if (in_array('+','suma') == $akcja) {
 
-if ($suma[0] == $akcja) {
+if (in_array($akcja, $suma)) {
 	echo $a + $b;
 } else if ('iloczyn' == $akcja || '*' == $akcja) {
 	echo $a * $b;
