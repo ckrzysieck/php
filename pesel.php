@@ -4,15 +4,21 @@
 
 $pesel = 44051401458;
 
+// zamienić stringach, operować na tablice, zmienić na int
+
+$peselString = (string)$pesel;
+
+strchr()
 
 echo "$pesel[0] \n";
 
 
-
-
-
-
-
+// $string = "123456789";
+// $tab = array();
+// for($i = 0; $i < strlen($string); $i++)
+//   $tab[$i] = $string[$i];
+ 
+// print_r($tab);
 
 
 // Aby sprawdzić czy dany PESEL jest prawidłowy należy wykonać następujące działania:
