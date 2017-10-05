@@ -15,7 +15,7 @@
 // }
 
 $tablica = range('A', 'Z', 1);
-
+// sprawdzić, czy jest w zbiorze tablicy, sprawdzić jaki ma klucz, następnie przesunąć znaleziony klucz o 3 pozycje wzwyż
 
 
 
