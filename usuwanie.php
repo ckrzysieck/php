@@ -1,5 +1,6 @@
 <?php
 
+
 function usun($tablica, $klucz)
 {
 	unset ($tablica[$klucz]);

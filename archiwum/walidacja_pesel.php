@@ -2,7 +2,7 @@
 
 // Pesel. Sprawdzenie, czy podana liczba 11-cyfrowa jest poprawnym PESELem. http://pl.spoj.com/problems/JPESEL/
 
-$pesel = "4405140145";
+$pesel = "44051401458";
 
 // Przerobiony kod ze strony http://phpedia.pl/wiki/Walidacja_numeru_PESEL
 
